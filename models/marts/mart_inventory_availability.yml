@@ -1,0 +1,30 @@
+models:
+  - name: mart_inventory_availability
+    description: This model provides a comprehensive overview of product availability across different warehouses, summarizing key metrics such as total available quantity, number of stocking locations, stock statuses, storage zones, and the date of the oldest inventory received.
+    access: public
+    columns:
+      - name: product_id
+        description: A unique identifier for each product.
+        data_tests:
+          - unique
+          - not_null
+      - name: total_available_quantity
+        description: The total quantity of a product available across all warehouses.
+        data_tests:
+          - not_null
+      - name: stocking_locations
+        description: The number of distinct warehouses where the product is stocked.
+        data_tests:
+          - not_null
+      - name: stock_statuses
+        description: A list of distinct stock statuses for the product across all warehouses.
+        data_tests:
+          - not_null
+      - name: storage_zones
+        description: A list of distinct storage zones where the product is stored, separated by commas.
+        data_tests:
+          - not_null
+      - name: oldest_inventory_date
+        description: The earliest date on which the product was received into inventory.
+        data_tests:
+          - not_null
