@@ -1,0 +1,6 @@
+product_id,warehouse_id,quantity_on_hand,reorder_point,restock_quantity,last_received_date,storage_zone
+P001,WH01,1500,500,1000,2024-01-15,BULK-A
+P002,WH01,750,300,800,2024-01-10,COOL-B
+P003,WH01,250,400,1000,2024-01-05,FROZ-C
+P001,WH02,2000,600,1200,2024-01-12,BULK-A
+P002,WH02,1000,400,900,2024-01-08,COOL-A
